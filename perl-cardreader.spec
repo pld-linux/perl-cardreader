@@ -1,6 +1,6 @@
 #
 # Conditional build
-# _with_tests	- perform "make test" (requires reader)
+%bcond_with	tests	# perform "make test" (requires reader)
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension for TLP and RFTLP SmartCard reader
@@ -35,7 +35,7 @@ cd perl
 %{__make} \
 	OPTIMIZE="%{rpmcflags} -I."
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 cd perl
