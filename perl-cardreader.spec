@@ -14,7 +14,7 @@ Source0:	http://www.gemplus.com/techno/tlp_drivers/download/libtlp-perl_%{versio
 # Source0-md5:	12caa3e41d2e5635d3274549600cd8da
 URL:		http://www.gemplus.com/techno/tlp_drivers/
 BuildRequires:	libtlp-devel
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
