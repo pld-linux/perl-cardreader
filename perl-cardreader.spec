@@ -11,6 +11,7 @@ Release:	1
 License:	BSD-like + restricted vendor's name usage (see copyright file)
 Group:		Libraries
 Source0:	http://www.gemplus.com/techno/tlp_drivers/download/libtlp-perl_%{version}.tar.gz
+# Source0-md5:	12caa3e41d2e5635d3274549600cd8da
 URL:		http://www.gemplus.com/techno/tlp_drivers/
 BuildRequires:	libtlp-devel
 BuildRequires:	perl-devel >= 5.8.0
