@@ -13,8 +13,8 @@ Group:		Libraries
 Source0:	http://www.gemplus.com/techno/tlp_drivers/download/libtlp-perl_%{version}.tar.gz
 URL:		http://www.gemplus.com/techno/tlp_drivers/
 BuildRequires:	libtlp-devel
-BuildRequires:	perl-devel >= 5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,8 +29,7 @@ Rozszerzenie Perla do czytników kart procesorowych TLP i RFTLP.
 
 %build
 cd perl
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+%{__perl} Makefile.PL
 %{__make} \
 	OPTIMIZE="%{rpmcflags} -I."
 
@@ -47,8 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc perl/{Changes,README.unix,debian/copyright}
-%{perl_vendorarch}/cardreader.pm
-%dir %{perl_vendorarch}/auto/cardreader
-%{perl_vendorarch}/auto/cardreader/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/cardreader/*.so
+%{perl_sitearch}/cardreader.pm
+%dir %{perl_sitearch}/auto/cardreader
+%{perl_sitearch}/auto/cardreader/*.bs
+%attr(755,root,root) %{perl_sitearch}/auto/cardreader/*.so
 %{_mandir}/man3/*
