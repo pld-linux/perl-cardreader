@@ -7,7 +7,7 @@ Summary:	Perl extension for TLP and RFTLP SmartCard reader
 Summary(pl):	Rozszerzenie Perla do czytników kart procesorowych TLP i RFTLP
 Name:		perl-cardreader
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	BSD-like + restricted vendor's name usage (see copyright file)
 Group:		Libraries
 Source0:	http://www.gemplus.com/techno/tlp_drivers/download/libtlp-perl_%{version}.tar.gz
