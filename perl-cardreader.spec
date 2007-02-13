@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl extension for TLP and RFTLP SmartCard reader
-Summary(pl.UTF-8):   Rozszerzenie Perla do czytników kart procesorowych TLP i RFTLP
+Summary(pl.UTF-8):	Rozszerzenie Perla do czytników kart procesorowych TLP i RFTLP
 Name:		perl-cardreader
 Version:	1.0.0
 Release:	2
