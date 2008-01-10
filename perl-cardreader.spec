@@ -33,6 +33,7 @@ cd perl
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags} -I."
 
 %{?with_tests:%{__make} test}
