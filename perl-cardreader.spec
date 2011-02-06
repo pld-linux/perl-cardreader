@@ -39,6 +39,8 @@ cd perl
 %{?with_tests:%{__make} test}
 
 %install
+rm -rf $RPM_BUILD_ROOT
+
 cd perl
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
