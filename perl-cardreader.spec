@@ -53,6 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc perl/{Changes,README.unix,debian/copyright}
 %{perl_vendorarch}/cardreader.pm
 %dir %{perl_vendorarch}/auto/cardreader
-%{perl_vendorarch}/auto/cardreader/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/cardreader/*.so
 %{_mandir}/man3/*
